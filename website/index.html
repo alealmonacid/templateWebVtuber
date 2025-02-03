@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Commission Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <nav>
+                    <button class="nav-btn active" data-page="home">home</button>
+                    <button class="nav-btn" data-page="comm_info">comm info</button>
+                    <button class="nav-btn" data-page="terms">terms</button>
+                </nav>
+            </header>
+
+            <main>
+                <!-- Home Page -->
+                <div class="page active" id="home">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="https://placehold.co/350/EEE/31343C" alt="Kawaii character">
+                        </div>
+                        <div class="profile-info">
+                            <h2>Hello and Welcome!</h2>
+                            <p>I'm username! This is a short introduction about me! I hope you have a good day today! ♥</p>
+
+                            <iframe src="https://player.twitch.tv/?channel=kaicenat&parent=http://127.0.0.1:5500/" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+
+
+                            <div class="container-socials">
+                                <div class="socials socialsvtuber">
+                                    <h3>Socials!</h3>
+                                    <div class="social-links">
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+
+                                    </div>
+                                </div>
+                                <div class="socials socialsillustration">
+                                    <h3>Socials!</h3>
+                                    <div class="social-links">
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                        <a href="#" class="social-btn"><img src="./assets/img/icons8-instagram-90.png" alt="" style="width: 80%;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="productos"></div>
+
+<button id="solicitar-productos" style="display: none;" onclick="solicitarProductos()">
+    Solicitar Productos
+</button>
+<button onclick="mostrarCarrito()">Ver Carrito</button>
+
+                <!-- Commission Info Page -->
+                <div class="page" id="comm_info">
+                    <div class="status-banner">
+                        <h2>Status | Open!</h2>
+                    </div>
+
+                    <div class="commission-types">
+                        <div class="commission-card">
+                            <h3 class="commission-title">Commission type 1</h3>
+                            <div class="commission-content">
+                                <div class="sample">A</div>
+                                <table class="price-table">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Price</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Sketch</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lineart</td>
+                                        <td>$20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colour</td>
+                                        <td>$30</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="commission-card">
+                            <h3 class="commission-title">Commission type 2</h3>
+                            <div class="commission-content">
+                                <div class="sample">B</div>
+                                <table class="price-table">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Price</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Sketch</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lineart</td>
+                                        <td>$20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colour</td>
+                                        <td>$30</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms Page -->
+                <div class="page" id="terms">
+                    <div class="terms-banner">
+                        <h2>Terms of Service</h2>
+                    </div>
+
+                    <div class="terms-content">
+                        <ul class="terms-list">
+                            <li><span class="heart">♥</span> Where you put your terms, like what currency and how you'll be paid</li>
+                            <li><span class="heart">♥</span> terms about how the person can use your art (credit, commercial vs personal use, etc)</li>
+                            <li><span class="heart">♥</span> refund terms</li>
+                            <li><span class="heart">♥</span> price terms</li>
+                            <li><span class="heart">♥</span> etc, etc</li>
+                        </ul>
+
+                        <div class="drawing-terms">
+                            <div class="will-draw">
+                                <h3>I will draw</h3>
+                                <ul>
+                                    <li>Will draw this</li>
+                                    <li>Will draw this</li>
+                                    <li>Will draw this</li>
+                                    <li>Will draw this</li>
+                                </ul>
+                            </div>
+                            <div class="wont-draw">
+                                <h3>I won't draw</h3>
+                                <ul>
+                                    <li>Won't draw that</li>
+                                    <li>Won't draw that</li>
+                                    <li>Won't draw that</li>
+                                    <li>Won't draw that</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="commission-btn">Commission Form</button>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <span>Hecho con ♥ por AlejoTSL</span>
+            </footer>
+        </div>
+    </div>
+    <button id="carrito-boton" onclick="mostrarCarrito()" style="position: fixed; top: 20px; right: 20px; font-size: 1.5em; padding: 10px 20px; background: #ff9800; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        🛒 (0)
+    </button>
+    <div id="modal-carrito" style="position: fixed; top: 0; right: -300px; width: 300px; height: 100vh; background: white; box-shadow: -2px 0px 5px rgba(0,0,0,0.2); padding: 20px; transition: right 0.3s;">
+        <h2>Carrito</h2>
+        <div id="carrito-contenido"></div>
+        <button onclick="borrarCarrito()">Borrar Carrito</button>
+        <button onclick="solicitarProductos()">Solicitar Productos</button>
+        <button onclick="cerrarCarrito()">Cerrar</button>
+    </div>
+    <button onclick="mostrarCarrito()" style="position: fixed; top: 20px; right: 20px;">🛒</button>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+
+    FUNCIONALIDAD NUEVA
+
+    AGREGAR OPCION DE CARGAR PRODUCTOS POR JSON
+    AGREGAR OPCION DE BOTON AGREGAR AL CARRO CON SELECTOR DE UNIDADES, TODO VA A LOCALSTORAGE
+    AL AGREGAR AL CARRO DEBE APARECER UN BOTON QUE DIGA SOLICITAR PRODUCTOS, AL SOLICITAR DEBE APARECER UN MODAL PARA CONFIRMAR
+    AL CONFIRMAR SE ENVIA MENSAJE PERSONALIZADO A WHATSAPP
+
+    "Hola, estoy interesado en los siguientes productos: {producto.nombre}"
+
+-->
